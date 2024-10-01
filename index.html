@@ -2,6 +2,29 @@
 <html>
 <head>
     <title>My GitHub Pages Website</title>
+    
+    <script>
+			// Function to change the background color
+			function changeBackgroundColor() {
+			    const colors = ['#ff9999', '#99ff99', '#9999ff', '#ffff99'];
+			    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+			    document.body.style.backgroundColor = randomColor;
+			}
+			
+			// Function to display a welcome message
+			function displayWelcomeMessage() {
+			    const name = prompt("What's your name?");
+			    if (name) {
+			        alert(`Welcome to my homepage, ${name}!`);
+			    }
+			}
+			
+			// Add event listeners when the page loads
+			window.onload = function() {
+			  	changeBackgroundColor();
+			    displayWelcomeMessage();
+			};
+		</script>
 </head>
 <body>
     <h1>Welcome to My Website</h1>
